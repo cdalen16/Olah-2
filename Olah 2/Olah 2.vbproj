@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ED35C10-2EB6-401E-A6AB-4CCC9F39F575}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Olah_2.My.MyApplication</StartupObject>
+    <RootNamespace>Olah_2</RootNamespace>
+    <AssemblyName>Olah 2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Olah 2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Olah 2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Avatar\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Avatar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.GamerServices\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.GamerServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Input.Touch\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Input.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Net\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Storage\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Xna.Framework.Video\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Xact\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Maps\frmDesolation.Designer.vb">
+      <DependentUpon>frmDesolation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\frmDesolation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maps\frmMidship.Designer.vb">
+      <DependentUpon>frmMidship.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\frmMidship.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmPostGameStats.Designer.vb">
+      <DependentUpon>frmPostGameStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\frmPostGameStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maps\frmSanctuary.Designer.vb">
+      <DependentUpon>frmSanctuary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maps\frmSanctuary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmFairUse.Designer.vb">
+      <DependentUpon>frmFairUse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\frmFairUse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmGameOptions.Designer.vb">
+      <DependentUpon>frmGameOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\frmGameOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmGameSetup.Designer.vb">
+      <DependentUpon>frmGameSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\frmGameSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmInstructions.Designer.vb">
+      <DependentUpon>frmInstructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\frmInstructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmLoading.Designer.vb">
+      <DependentUpon>frmLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\frmLoading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmMainMenu.Designer.vb">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\frmMapSelect.Designer.vb">
+      <DependentUpon>frmMapSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\frmMapSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Maps\frmDesolation.resx">
+      <DependentUpon>frmDesolation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\frmMidship.resx">
+      <DependentUpon>frmMidship.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmPostGameStats.resx">
+      <DependentUpon>frmPostGameStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps\frmSanctuary.resx">
+      <DependentUpon>frmSanctuary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmFairUse.resx">
+      <DependentUpon>frmFairUse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmGameOptions.resx">
+      <DependentUpon>frmGameOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmGameSetup.resx">
+      <DependentUpon>frmGameSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmInstructions.resx">
+      <DependentUpon>frmInstructions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmLoading.resx">
+      <DependentUpon>frmLoading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\frmMapSelect.resx">
+      <DependentUpon>frmMapSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Resources\Blue Spartan.psd" />
+    <None Include="Resources\Cyan Spartan.psd" />
+    <None Include="Resources\Green Spartan.psd" />
+    <None Include="Resources\Orange Spartan.psd" />
+    <None Include="Resources\Red Spartan.psd" />
+    <None Include="Resources\Yellow Spartan.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 Minute Left.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game Over.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magnum Shot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow Spartan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow Spartan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Spartan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Spartan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyan Spartan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyan Spartan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Spartan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Spartan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange Spartan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange Spartan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Spartan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Spartan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmSanctuary 6_1_2015 11_14_56 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDesolation 6_1_2015 11_15_32 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmMidship 6_1_2015 11_12_13 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ugcuserfile-8be0828d-f6a4-422b-94bf-6895d650162c-beb5723adf8a6df2-full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halo The Master Chief Collection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monolith_BG_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halo_2_Theme_song.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmSanctuary 6_3_2015 1_20_18 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDesolation 6_3_2015 1_20_39 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmMidship 6_3_2015 1_18_42 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDesolation 6_3_2015 1_25_36 AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmDesolation 6_3_2015 7_06_39 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmMidship 6_3_2015 7_05_31 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frmSanctuary 6_3_2015 7_06_15 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question Mark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
